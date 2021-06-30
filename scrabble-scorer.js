@@ -107,7 +107,7 @@ let letterArray = [];
 let i =0
 for (const oldKey in oldStructure){
 for (i = 0; i < oldStructure[oldKey].length; i++){
-newStructure[`${oldStructure[oldKey][i].toLowerCase()}`] = oldKey;
+newStructure[`${oldStructure[oldKey][i].toLowerCase()}`] = Number(oldKey);
 }
 }
 return newStructure;
