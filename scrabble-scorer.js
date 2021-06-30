@@ -66,7 +66,7 @@ let scrabbleScore = function(word){
 	let score = 0;
   let i = 0;
   for (i = 0; i < word.length; i++){
-      score += Number( newPointStructure[word[i]]);
+      score += newPointStructure[word[i]];
   }
 	return score;
 }
