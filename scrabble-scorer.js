@@ -66,7 +66,7 @@ let scrabbleScore = function(word){
 	let score = 0;
   let i = 0;
   for (i = 0; i < word.length; i++){
-      score += Number( newPointStructure.word[i]);
+      score += Number( newPointStructure[word[i]]);
   }
 	return score;
 }
@@ -113,8 +113,6 @@ newStructure[`${oldStructure[oldKey][i].toLowerCase()}`] = oldKey;
 return newStructure;
 };
 
-
-
 let newPointStructure = transform(oldPointStructure);
 
 function runProgram() {
@@ -123,7 +121,7 @@ function runProgram() {
    //console.log(oldScrabbleScorer(word));
    scorer = scorerPrompt();
    console.log(`Score for '${word}': ${scorer.scoringFunction(word)}`);
-   console.log(newPointStructure);
+   //console.log(newPointStructure);
 }
 
 // Don't write any code below this line //
