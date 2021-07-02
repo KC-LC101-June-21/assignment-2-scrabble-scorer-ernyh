@@ -122,7 +122,7 @@ function runProgram() {
    scorer = scorerPrompt();
    console.log(`Score for '${word}': ${scorer.scoringFunction(word)}`);
    //console.log(newPointStructure);
-}
+};
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
