@@ -11,7 +11,7 @@ const oldPointStructure = {
   8: ['J', 'X'],
   10: ['Q', 'Z']
 };
-
+console.log("Kevin is a doofus")
 const vowels = ['A', 'E', 'I', 'O', 'U'];
 
 function oldScrabbleScorer(word) {
